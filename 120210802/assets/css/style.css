@@ -1,0 +1,223 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .mb-5dc {
+      margin-bottom: 100px !important;
+    }
+    body {
+      font-family:  url(/assets/font/TuesdayNight-Regular.woff) !important ;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 20px;
+    }
+    :root {
+            --sidebar: #ffffff;
+
+      --bg: #ffffff;
+      --text: #222222;
+      --subtext: #555555;
+      --accent: #a86b3d;
+      --card: #ffffff;
+    }
+    body.dark {
+                  --sidebar: #0c0c0c;
+
+      --bg: #181818;
+      --text: #f1f1f1;
+      --subtext: #cccccc;
+      --accent: #f4a261;
+      --card: #0c0c0c;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #fff;
+      height: 100vh;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      border-right: 1px solid #ddd;
+      position: fixed;
+    }
+    .sidebar img {
+      width: 80px;
+      border-radius: 50%;
+    }
+    .sidebar h2 {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #a86b3d;
+    }
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s;
+      font-size: 16px;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #a86b3d;
+    }
+      footer {
+      background: #181818;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+    .bottom-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    main {
+      margin-left: 220px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+    }
+    section {
+      display: flex;
+      justify-content: space-between;
+      gap: 3px;
+    }
+    .about-text {
+      flex: 1;
+    }
+    .about-text h2, .about-text h1, .about-text p {
+      color: var(--text);
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      gap: 10px 30px;
+    }
+    .info-grid span {
+      font-weight: bold;
+      color: var(--accent);
+    }
+    .download-btn {
+      background-color: var(--accent);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .about-image img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 6px;
+    }
+     .hero-card h1 {
+      margin: 0;
+    }
+    .hero-card p {
+      margin: 6px 0;
+    }
+      @media (max-width: 768px) {
+      .hero {
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center;
+      }
+      .hero-card {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 40px;
+      }
+       .mb-5dc {
+      margin-bottom: 0px !important;
+    }
+    }
+  
+    .info-card {
+      background: #fff;
+      padding: 25px 30px;
+      max-width: 400px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 6px;
+    }
+   .hero-card {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #000;
+      padding: 20px 30px;
+      border-radius: 8px;
+      max-width: 90%;
+      width: 400px;
+      margin: 20px;
+    }
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+      }
+      .sidebar h2 {
+        font-size: 14px;
+      }
+      .sidebar img {
+        width: 50px;
+      }
+      .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 0;
+      }
+      .nav-links a {
+        font-size: 14px;
+        padding: 4px;
+      }
+      main {
+        margin-left: 0;
+        padding: 20px;
+      }
+      section {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+
+    .mt-33 {
+      margin-top: 20px !important;
+    }
+    #scrollTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 999;
+      background-color: #333;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: opacity 0.3s;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: #c7e30f;
+    }
